@@ -9,9 +9,11 @@
 </head>
 <body>
 
+    @include('partials.header')
+
     <section>
         @yield('movies-list')
     </section>
-    
+
 </body>
 </html>
