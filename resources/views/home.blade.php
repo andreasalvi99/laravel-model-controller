@@ -8,19 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="row row-cols-3 g-3">
-        @foreach ($movies as $movie)
-            <div class="col">
-                <div class="card text-bg-light mb-3">
-                    <div class="card-header">{{$movie['title']}}</div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{$movie['original_title']}}</h5>
-                        <p class="card-text">{{$movie['date']}}</p>
-                        <p class="card-text">{{$movie['vote']}}</p>
+    <div class="container p-4">
+        <div class="row row-cols-3 g-3">
+            @foreach ($movies as $movie)
+                <div class="col">
+                    <div class="card text-bg-light mb-3 border border-dark">
+                        <div class="card-header">{{$movie['title']}}</div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{$movie['original_title']}}</h5>
+                            <p class="card-text">{{$movie['date']}}</p>
+                            <p class="card-text">{{$movie['vote']}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
     </div>
 </body>
 </html>
