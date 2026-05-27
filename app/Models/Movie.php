@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    public $id;
-    public $title;
-    public $date;
-    public $vote;
+    private $id;
+    private $title;
+    private $date;
+    private $vote;
 
     public function getStars($vote, $maxVote) {
         $intVote = (int) $vote;
