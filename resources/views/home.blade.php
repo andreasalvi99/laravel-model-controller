@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container p-4">
-        <div class="row row-cols-3 g-3">
+        <div class="row row-cols-3 g-4">
             @foreach ($movies as $movie)
                 <div class="col">
                     <div class="card text-bg-light mb-3 border border-dark">
