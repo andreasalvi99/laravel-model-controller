@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Movie extends Model
 {
@@ -10,6 +11,10 @@ class Movie extends Model
     private $title;
     private $date;
     private $vote;
+
+    public function getEuropeanDate($date) {
+      return $europeanDate = Carbon::parse($date)->format('d-m-Y');
+    }
 
     public function getStars($vote, $maxVote) {
         $intVote = (int) $vote;

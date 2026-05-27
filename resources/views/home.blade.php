@@ -19,7 +19,7 @@
                         <div class="card-header">{{$movie['title']}}</div>
                         <div class="card-body">
                             <h5 class="card-title">{{$movie['original_title']}}</h5>
-                            <p class="card-text">{{$movie['date']}}</p>
+                            <p class="card-text">{{$movie->getEuropeanDate($movie['date'])}}</p>
                                <p class="card-text">{{$movie['vote']}}</p>
                             <p class="card-text">{!! $movie->getStars($movie['vote'], 10) !!}</p>
                         </div>
