@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
     public $id;
-    public $name;
+    public $title;
     public $release_date;
     public $rating;
 
