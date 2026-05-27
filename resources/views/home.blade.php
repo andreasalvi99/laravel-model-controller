@@ -8,17 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    {{-- @php
-        dd($movies)
-    @endphp --}}
-    <div class="row row-cols-3">
+    <div class="row row-cols-3 g-3">
         @foreach ($movies as $movie)
             <div class="col">
                 <div class="card text-bg-light mb-3">
                     <div class="card-header">{{$movie['title']}}</div>
                     <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <h5 class="card-title">{{$movie['original_title']}}</h5>
+                        <p class="card-text">{{$movie['date']}}</p>
+                        <p class="card-text">{{$movie['vote']}}</p>
                     </div>
                 </div>
             </div>
