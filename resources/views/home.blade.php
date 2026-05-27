@@ -9,5 +9,9 @@
 </head>
 <body>
     Ciao
+
+    @php
+        // dd($movies);
+    @endphp
 </body>
 </html>
